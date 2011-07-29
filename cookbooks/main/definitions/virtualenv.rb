@@ -1,3 +1,4 @@
+
 define :virtualenv, :action => :create, :owner => "root", :group => "root", :mode => 0755, :packages => {} do
     path = params[:path] ? params[:path] : params[:name]
     if params[:action] == :create
