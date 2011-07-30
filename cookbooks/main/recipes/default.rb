@@ -1,4 +1,6 @@
 
+execute "apt-get update"
+
 node[:base_packages].each do |pkg|
   package pkg do
     :upgrade
